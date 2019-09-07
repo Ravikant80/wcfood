@@ -1,0 +1,6 @@
+{
+    "require": {
+        "darryldecode/cart": "~4.0",
+        "cviebrock/eloquent-sluggable": "^4.8"
+    }
+}
