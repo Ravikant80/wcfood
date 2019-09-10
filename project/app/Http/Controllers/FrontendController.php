@@ -30,9 +30,6 @@ class FrontendController extends Controller
 
 
 
-
-
-
      public function subscribeStore(Request $request){
 
      $this->validate($request,[
@@ -66,22 +63,22 @@ class FrontendController extends Controller
 
 
     
-    public function aboutUs(){
+    public function aboutUs() {
 
-        return view('frontend.about-us');
+    return view('frontend.about-us');
     }
 
-    public function ourGallery(){
+    public function ourGallery() {
 
-        return view('frontend.gallery');
+    return view('frontend.gallery');
     }
 
-    public function ourServices(){
+    public function ourServices() {
 
-        return view('frontend.services');
+    return view('frontend.services');
     }
 
-    public function contactUs(){
+    public function contactUs() {
 
     return view('frontend.contact-us1');
     }
@@ -89,7 +86,7 @@ class FrontendController extends Controller
 
 
         
-    public function storeContactUs(Request $request){
+    public function storeContactUs(Request $request) {
 
     $messages = [
      'phone.required' => 'Phone Number Must Be 10 Digit!',
@@ -123,12 +120,12 @@ class FrontendController extends Controller
 
   
 
-    public function ourBlog(){
+    public function ourBlog() {
     return view('frontend.blog');
     }
 
 
-    public function sendNotification(){
+    public function sendNotification() {
 
     $user = User::first();
   
